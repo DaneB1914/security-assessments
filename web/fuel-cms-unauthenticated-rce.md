@@ -2,8 +2,8 @@
 
 **Platform:** TryHackMe  
 **Assessment Type:** Vulnerability Capstone (Web Application)  
-**Date:** <Add date>  
-**Author:** <Your Name>  
+**Date:** 1/20/2026  
+**Author:** Dane Babcock  
 
 ---
 
@@ -148,7 +148,4 @@ This write-up is provided for educational and portfolio purposes only.
 All testing was conducted against intentionally vulnerable systems in a controlled environment with authorization.  
 No sensitive exploit details or real-world targets are disclosed.
 
----
 
-Dane Babcock
-1/20/2026
