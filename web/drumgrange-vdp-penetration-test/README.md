@@ -1,4 +1,5 @@
 # Drumgrange Ltd – Vulnerability Disclosure Program Penetration Test
+**Audience:** Recruiters, hiring managers, and security professionals reviewing practical penetration testing methodology and reporting skills.
 
 ## Overview
 
@@ -25,6 +26,19 @@ No vulnerabilities were identified within the authorized scope. This outcome ref
 
 ---
 
+## Skills Demonstrated
+
+- Scope validation & authorization handling
+- Passive reconnaissance (OSINT-driven)
+- Web asset classification
+- Directory and content enumeration
+- HTTP & security header analysis
+- Federated authentication flow analysis
+- False-positive avoidance
+- Professional penetration testing reporting
+
+---
+
 ## Why This Project Matters
 
 In real consulting environments, penetration testing is as much about:
@@ -38,6 +52,10 @@ This engagement demonstrates:
 - disciplined methodology,
 - careful decision-making,
 - and clear technical communication.
+
+---
+
+No vulnerabilities were identified within scope. This outcome reflects effective baseline security controls rather than incomplete testing.
 
 ---
 
