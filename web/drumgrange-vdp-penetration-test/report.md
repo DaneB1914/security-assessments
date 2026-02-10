@@ -182,6 +182,87 @@ curl -I https://support.drumgrange.com
 curl -I https://support.drumgrange.co.uk/
 ```
 
-# TO BE CONINUED...
+| Observations |
+|----|
+| Canonical redirect enforcement |
+| Authentication enforced prior to access |
+| Strong transport security (HSTS) |
+| Secure cache-control behavior |
+| Proper session handling |
+
+#### Assessment:
+No misconfigigurations or exposure risks identified.
+
+---
+
+## 11. Phase 6 – Unauthenticated Application Behavior Analysis
+
+### Target
+https://support.drumgrange.co.uk/User/Login
+
+| Method |
+|---|
+| Submission of benign input values |
+| Network traffic observation via browser developer tools |
+| No credential guessing of brute-force attempts |
+
+| Observations |
+|---|
+| Server-side login handling |
+| CSRF protection implemented |
+| Generic error messaging |
+| No response differentiation based on input |
+| No session elevation on failure |
+
+### Assessment:
+Authentication logic behaves securely and resists common enumeration and logic flaws.
+
+---
+
+## 12. Phase 7 – Federated Authentication Flow Observation (Webmail)
+
+### Target
+https://webmail.drumgrange.com/mail
+
+| Observations |
+|---|
+| Immediate redirect to Microsoft identity services
+| OAuth-based authentication flow |
+| No local credential handling observed |
+
+## Security Posture Summery
+
+### Observed defensive strengths include:
+- Clear separation of infrastructure roles (VPN, support, webmail)
+
+-Proper enforcement of authentication prior to application access
+
+-Strong transport-layer protections (HSTS)
+
+-Secure session and cache-handling behavior
+
+-Delegation of authentication to Microsoft identity services
+
+-Perimeter protection via Cloudflare
+
+---
+
+## Methodology & Professional Judgment
+
+Testing decisions were guided by **scope compliance**, **signal quality**, and **risk minimization**.
+
+Certain tools and intrusive techniques were intentionally not used where they would have introduced unnecessary noise, exceeded authorization boundaries, or provided limited analytical value. Scope limitations directly influenced testing depth, particularly for authenticated functionality and third-party identity services.
+
+Potential false positives were avoided by validating observed behavior against expected enterprise design patterns. Only defensible, actionable observations were documented.
+
+---
+
+## Conclusion
+
+The assessed Drumgrange Ltd assets exhibit a strong external security posture and adhere to industry best practices for access control, transport security, and authentication architecture.
+
+Equally important, this engagement demonstrates disciplined methodology, appropriate restraint, and professional judgment — all critical components of real-world penetration testing.
+
+---
 
 **Disclaimer**: No exploitation attempts were performed, as no validated vulnerabilities were identified within scope.
